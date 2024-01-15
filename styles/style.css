@@ -9,6 +9,7 @@
     font-family: "IBM Plex mono", sans-serif;
     font-size: 18px;
     color: var(--decorate-color);
+    background-attachment: fixed;
 }
 
 @media (width >= 768px) {
@@ -351,22 +352,10 @@
 
 .footer {
     padding: 10px;
-    block-size: 663px;
+    block-size: 100vb;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-@media (width >= 768px) {
-    .footer {
-        block-size: 1024px;
-    }
-}
-
-@media (width >= 1024px) {
-    .footer {
-        block-size: 763px;
-    }
 }
 
 .footer__text {
