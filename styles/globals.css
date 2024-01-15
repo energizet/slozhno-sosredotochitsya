@@ -48,6 +48,7 @@ picture {
 
 button,
 a {
+    cursor: pointer;
     color: currentColor;
     font-family: inherit;
     font-size: inherit;
@@ -60,14 +61,12 @@ a {
     text-decoration: none;
 }
 
-a:hover::after {
-    content: ' ';
-    position: absolute;
-    inset-inline-start: 0;
-    inset-block-end: 0;
-    inline-size: 100%;
-    block-size: 1px;
-    background: var(--second-color);
+a:hover {
+    border-block-end: 1px solid var(--second-color);
+}
+
+a:focus {
+    outline: none;
 }
 
 a:focus-visible {
